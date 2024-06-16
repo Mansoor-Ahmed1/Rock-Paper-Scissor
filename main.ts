@@ -6,13 +6,12 @@ let comp_num: number = Math.random() * 10;
 
 console.log(comp_num);
 
-// let rounded_comp_num = comp_num.toFixed(1)
 let rounded_comp_num: number = Math.round(comp_num);
 
 console.log(rounded_comp_num);
 
 // 0,1,2,3,4,5,6,7,8,9,10 // possible outcomes.
-//total possible outcomes = 11
+// total possible outcomes = 11
 // 11/3 = 3.67
 
 let computer_choice: string;
@@ -34,6 +33,7 @@ let user_choice = await inquirer.prompt([
   },
 ]);
 
+
 if (user_choice.input == "Rock") {
   if (computer_choice == "Rock") {
     console.log("It's a Tie");
@@ -45,6 +45,7 @@ if (user_choice.input == "Rock") {
     console.log("You Won");
   }
 }
+
 else if (user_choice.input == "Paper") {
   if (computer_choice == "Rock") {
     console.log("You won");
@@ -54,6 +55,7 @@ else if (user_choice.input == "Paper") {
     console.log("Computer Won");
   }
 } 
+
 else{ // user choice --> scissor
     if (computer_choice == "Rock") {
         console.log("Computer won");

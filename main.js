@@ -1,11 +1,11 @@
+#! /usr/bin/env node
 import inquirer from "inquirer";
 let comp_num = Math.random() * 10;
 console.log(comp_num);
-// let rounded_comp_num = comp_num.toFixed(1)
 let rounded_comp_num = Math.round(comp_num);
 console.log(rounded_comp_num);
 // 0,1,2,3,4,5,6,7,8,9,10 // possible outcomes.
-//total possible outcomes = 11
+// total possible outcomes = 11
 // 11/3 = 3.67
 let computer_choice;
 if (rounded_comp_num < 3.67) {
